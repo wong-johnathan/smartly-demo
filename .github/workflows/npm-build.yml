@@ -27,7 +27,7 @@ jobs:
         cd react
         npm i
         npm run build
-        cp ./build ../express/build
+        mv -f ./build ../express/build
 
     - name: Commit changes
       run: |
